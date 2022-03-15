@@ -1,15 +1,16 @@
 
 exports.RESPONSE_FLAGS = {
     SUCCESS : 200,
+    PARAMETER_MISSING: 400,
     NOT_FOUND : 404,
-    SOMETHING_WENT_WRONG : 500,
+    SOMETHING_WENT_WRONG : 500
 }
 
 exports.RESPONSE_MESSAGES = {
     SUCCESS : "Success",
+    PARAMETER_MISSING : "Parameters missing",
     NOT_FOUND : "Not Found",
     SOMETHING_WENT_WRONG : "Something went wrong",
-    PARAMETER_MISSING : "Parameters missing",
 }
 
 exports.sendResponse = (res, message, code, data) => {

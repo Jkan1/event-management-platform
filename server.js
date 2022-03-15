@@ -38,6 +38,10 @@ app.use(function (req, res, next) {
 
 require('./database');
 
+const router = require('./routes/routes');
+
+app.use('/api', router);
+
 (function startInitialProcess() {
     const http = require('http');
     http.createServer(app).listen(app.get('port'), function () {
