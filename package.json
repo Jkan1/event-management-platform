@@ -1,0 +1,26 @@
+{
+  "name": "event-management-platform",
+  "version": "1.0.0",
+  "description": "REST APIs for an Event Management Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=dev node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jkan1/event-management-platform.git"
+  },
+  "author": "Jkan1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jkan1/event-management-platform/issues"
+  },
+  "homepage": "https://github.com/Jkan1/event-management-platform#readme",
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1",
+    "winston": "^3.6.0"
+  }
+}
