@@ -19,7 +19,7 @@ const dbConfig = {
       // We introduce a delay before attempting to reconnect to avoid a hot loop
       setTimeout(handleDisconnect, 2000);
     } else {
-      logger.info({ origin: "MYSQL SERVICE", event: "MySQL connection established!!" });
+      logger.info({ message: 'MySQL connection established!!' });
     }
   });
   connection.on('error', function (err) {

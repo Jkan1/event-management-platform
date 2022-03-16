@@ -45,7 +45,7 @@ app.use('/api', router);
 (function startInitialProcess() {
     const http = require('http');
     http.createServer(app).listen(app.get('port'), function () {
-        logger.info(`Express server listening on ${config.get('PORT')}`);
+        logger.info(`Express server listening on Port ${config.get('PORT')}`);
     });
 })();
 

@@ -6,6 +6,6 @@ const validator = require('../validators/validator');
 
 router.post('/create-event', validator.createEvent, controller.createEvent);
 
-router.get('/get-events', controller.getEvents);
+router.get('/get-events', validator.getEvents, controller.getEvents);
 
 module.exports = router;
